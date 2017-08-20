@@ -1,7 +1,10 @@
 ## Laravel jwt with simple REST CRUD 
 its just my journey learn laravel, REST API, Authentication with JWT.
+
 applying this tutorial (https://www.sitepoint.com/how-to-build-an-api-only-jwt-powered-laravel-app/) - still working on
+
 Built from boiler plate (https://github.com/francescomalatesta/laravel-api-boilerplate-jwt)
+
 ## Laravel API Boilerplate (JWT Edition)
 
 Laravel API Boilerplate is a "starter kit" you can use to build your first API in seconds. As you can easily imagine, it is built on top of the awesome Laravel Framework. This version is built on Laravel 5.4!
