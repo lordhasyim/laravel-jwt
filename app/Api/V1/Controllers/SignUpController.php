@@ -3,6 +3,8 @@
 namespace App\Api\V1\Controllers;
 
 use Config;
+use Validator;
+use Dingo\Api\Exception\ValidationHttpException;
 use App\User;
 use Tymon\JWTAuth\JWTAuth;
 use App\Http\Controllers\Controller;
@@ -20,7 +22,8 @@ class SignUpController extends Controller
 
         if(!Config::get('boilerplate.sign_up.release_token')) {
             return response()->json([
-                'status' => 'ok'
+                'status' => 'ok',
+                'message' => 'cannot find config boilerplate'
             ], 201);
         }
 
@@ -30,4 +33,6 @@ class SignUpController extends Controller
             'token' => $token
         ], 201);
     }
+
+
 }
